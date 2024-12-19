@@ -1,0 +1,156 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left top, #5b37b1, #eece83);
+  color: white;
+  font-weight:600 ;
+}
+.container {
+  border: 0.5px solid white;
+  border-radius: 10px;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  box-shadow: 10px 10px 4px #524375, 8px 8px 0px #7d7b63;
+}
+h1 {
+  font-family: 2rem;
+  margin-block: 8px;
+}
+.inputBox {
+  position: relative;
+}
+#icon {
+  position: absolute;
+  top: 16px;
+  color: rgba(29, 28, 28, 0.912);
+  right: 6px;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 2;
+}
+.passBox {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.7rem;
+  width: 320px;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-block: 8px;
+  text-overflow: ellipsis;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-block: 8px;
+}
+.row p,
+.row label {
+  font-size: 18px;
+}
+.row input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.genbtn {
+  border: none;
+  outline: none;
+  background-color: #374982;
+  padding: 12px 24px;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-block: 8px;
+  cursor: pointer;
+}
+.genbtn:hover {
+  background-color: #004dc1;
+}
+
+/* Responsive CSS */
+@media (max-width: 1024px) {
+  .container {
+    padding: 20px;
+    width: 70%;
+  }
+  h1{
+    text-align: center;
+  }
+  .passBox {
+    width: 100%;
+    font-size: 18px;
+  }
+  .row label {
+    font-size: 16px;
+    
+  }
+  .genbtn {
+    width: 50%;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    padding: 16px;
+    width: 60%;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .passBox {
+    width: 100%;
+    font-size: 16px;
+  }
+  .row label {
+    margin-bottom: 8px;
+  }
+  .genbtn {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container{
+    width: 80%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .passBox {
+    font-size: 14px;
+    padding: 0.6rem;
+  }
+  .row p{
+    font-size: 14px;
+  }
+  .row label {
+    font-size: 16px;
+  }
+  .genbtn {
+    width: 100%;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  #icon{
+    font-size: 20px;
+  }
+}
